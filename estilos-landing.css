@@ -1,0 +1,63 @@
+/* Esto fue lo que les comenté de hacer un "reset" de los estilos,
+puesto que los diferentes navegadores tienen algunos por default.
+*/
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  /*'vh' es otra unidad de medida del ancho de pantalla.
+  Revisar el siguiente artículo para entender 
+  la diferencia entre poner 100vh y 100%
+  https://bitsofco.de/viewport-vs-percentage-units/
+  */
+  height: 100vh;
+  background-image: url(innovacion-fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 50px;
+  /* Revisar la guía completa que está en CSS Tricks:
+  
+  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*text-align: center;*/
+  justify-content: center;
+}
+
+.fila1{display: flex; text-align:center;}
+.columna {flex: 50% ; text-align:center;}
+/*.align {content:center}*/
+img{width:100%;}
+h1{font-family: 'Pacifico', cursive;}
+p {font-family: 'Pacifico', cursive;}
+h3{font-family: 'Pacifico', cursive;}
+/*p {
+  width: 600px;
+  margin: 0 auto 20px;*/
+}
+ .fila2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5% 10%;
+  background-color: #e8e8e8;}
+  .columna3 {
+  flex: 33%;
+  border: solid 1px black;
+  margin: 1%;}
+  .recuadro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5% 10%;
+  background-color: #e8e8e8;}
+  h2{text-align-last: center;}
+  .linea {
+  border-right: solid 1px black;

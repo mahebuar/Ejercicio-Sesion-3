@@ -1,0 +1,99 @@
+/* Esto fue lo que les comenté de hacer un "reset" de los estilos,
+puesto que los diferentes navegadores tienen algunos por default.
+*/
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  /*'vh' es otra unidad de medida del ancho de pantalla.
+  Revisar el siguiente artículo para entender 
+  la diferencia entre poner 100vh y 100%
+  https://bitsofco.de/viewport-vs-percentage-units/
+  */
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=42a10871f610c84a108afd8c3750fbae&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+p {
+  font-family: serif;
+}
+
+h1 {
+    font-family: 'Averia Serif Libre', cursive;  
+
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+p {
+  font-family: monospace;  
+}
+
+.texto-header {
+  color: #f6f6f6;
+  font-family: 'Averia Serif Libre', cursive;  
+}
+
+.titulo {
+  color: #0F131C;
+  font-family: 'Averia Serif Libre', cursive;  
+}
+
+.fila1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.columna {
+  flex: 50%;
+  margin: 2%;
+}
+
+.fila2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5% 10%;
+  background-color: #e8e8e8;
+}
+
+.fila3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*En vez de colores, decidí crear un recuadro para cada columna y usar
+margin para que no cubra todo el div.*/
+.columna3 {
+  flex: 33%;
+  border: solid 1px black;
+  margin: 1%;
+}
+
+/*Con esta clase creé la línea divisoria entre las redes sociales*/
+.linea {
+  border-right: solid 1px black;
+}
+
